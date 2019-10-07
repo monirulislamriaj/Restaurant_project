@@ -1,0 +1,137 @@
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    .thime-bg {
+        padding: 0px;
+    }
+    button.btn.btn-outline-success {
+        margin-top: 10px;
+    }
+}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+
+         .single-cta {
+        margin-left: 36px;
+         }
+         .thime-bg {
+        padding: 0px 50px;
+        }
+        .menu-aria {
+        margin-bottom: -57px;
+         }
+        .main-menu ul li {
+            margin-right: 5px;
+        }
+        .main-menu ul li a {
+            font-size: 15px;
+        }
+        .featurcs-aria {
+            padding: 44px 0;
+        }
+        .section-title {
+            margin-bottom: 50px;
+        }
+        .section-title h2, .our-cases-title h2 {
+            font-size: 40px;
+            text-align: center;
+            display: block;
+        }
+        .section-title h4 {
+            font-size: 24px;
+            text-align: center;
+        }
+        .section-title p, .our-cases-title p {
+            font-size: 16px;
+            text-align: center;
+        }
+        .service-aria {
+            padding:50px 0px;
+        }
+        .video-aria {
+            padding: 100px 0;
+        }
+        
+        .our-cases {
+            padding: 50px 0px;
+        }
+        .single-testomoneal {
+            padding-top: 100px; 
+        }
+        .single-testomoneal p {
+            font-size: 16px;
+        }
+        .pb-100 {
+            padding-bottom: 0px;
+        }
+        button.primary {
+            padding: 20px 70px 20px 70px;
+            margin-bottom: 0px; 
+        }
+        #slick-slide-control20,#slick-slide-control21,#slick-slide-control30,#slick-slide-control40,#slick-slide-control41,#slick-slide-control42,#slick-slide-control43 {
+            display: none;
+        }
+        .faq-tham img {
+            margin-left:0px;
+            height: 0%;
+        }
+        .blog-aria {
+            padding: 50px 0;
+        }
+        .blog-contant {
+            margin-bottom:0px;
+            margin-right: -10px;
+        }
+        .blog-contant h3 {
+            padding: 9px 2px 0px 11px;
+            line-height: 20px;
+        }
+        .blog-contant h6 {
+            padding: 9px 1px 0px 10px;
+        }
+        .blog-contant h6 span a {
+            margin-left: 10px;
+        }
+        .read-more {
+            margin-top: 20px;
+        }
+        .footer-aria {
+            padding: 35px 0 0 0;
+        }
+        .subscribed-form {
+            width: 210px;
+            margin-top: 46px;
+        }
+        .subscribed-form input {
+            padding: 20px 10px;
+        }
+        .footer-widget .footer-list li {
+            padding-bottom: 9px;
+        }
+        .footer-menu {
+            margin-left: 0px; 
+       }
+       .copyright-aria p {
+        padding-top: 15px;
+    }
+    .footer-menu li {
+        padding: 20px 0px 20px 10px;
+    
+}
+
+
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    
+    
+}
+
+
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  
+}
+

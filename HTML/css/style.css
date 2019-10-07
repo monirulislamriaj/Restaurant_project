@@ -1,0 +1,624 @@
+/*
+Theme Name:
+Author:
+Support:
+Description:
+Version:
+*/
+
+
+/*css index
+-------------------
+1.Theme default css
+2.Header
+3.silder
+4.about-aria
+5.features-aria
+6.department
+7.Team
+8.video-aria
+9.counter
+10.footer
+*/
+
+
+/*------------------------ */
+
+
+/*BASIC SETUP */
+
+
+/*------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400i,700,700i|Lato:300,300i,400,700|Yeseva+One&display=swap');
+body {
+    background-color: #fff;
+    color: #555;
+    font-weight: 300;
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 14px;
+    text-rendering: optimizeLegibility;
+    font-style: normal;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.mb {
+    margin-bottom: 20px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: auto;
+    color: #0668de;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: normal;
+    line-height: 1.3;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+}
+
+h1 {
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 180%;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    line-height: 30px;
+    color: #535150;
+    margin: 0;
+}
+
+hr {
+    border-bottom: 1px solid #535150;
+    border-top: 24px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+label {
+    color: #7e77;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+ ::-moz-selection {
+    background: #fff;
+    color: #000;
+    text-shadow: none;
+}
+
+ ::selection {
+    background: #fff;
+    color: #000;
+    text-shadow: none;
+}
+
+*::-moz-placeholder {
+    background: #fff;
+    color: #868995;
+    text-shadow: none;
+    opacity: 1;
+}
+
+*::placeholder {
+    color: #8a8a8a;
+    text-shadow: none;
+    opacity: 1;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/*h2:after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}*/
+
+a:link,
+a:visited {
+    color: #0000;
+    padding-bottom: 1px;
+    text-decoration: none;
+    border-bottom: 1px solid #557ac9;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #0668de;
+    border-bottom: 1px solid transparent;
+}
+
+a:focus,
+button:focus {
+    color: #0668de;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    transition: all 0.3s ease-out 0s;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.fix {
+    overflow: hidden;
+}
+
+.button {
+    color: #fff;
+    outline: medium none;
+}
+
+.btn {
+    background: #007bff no-repeat scroll 0 0;
+    border: medium none;
+    border-radius: 2px;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transition: all 0.3s ease;
+    vertical-align: middle;
+    white-space: nowrap;
+    opacity: 1;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #19307d;
+}
+
+.head {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.2))), url(../img/banner.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../img/banner.png);
+    background-size: cover;
+}
+
+.navbar-light .navbar-brand {
+    border-bottom: none;
+}
+
+.navbar-nav {
+    margin-left: 220px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 21px;
+    color: white;
+    margin-right: 5px;
+    border-bottom: none;
+    padding: 41px 15px 15px 15px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    transition: .3s;
+}
+
+.sosiel-icon {
+    margin-top: 30px;
+}
+
+.sosiel-icon a {
+    border-bottom: none;
+}
+
+.sosiel-icon a i {
+    font-size: 20px;
+    color: #dab33e;
+    padding: 10px;
+}
+
+.header-content h1 {
+    font-family: auto;
+    font-size: 90px;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+}
+
+.header-content-logo img {
+    display: flex;
+    padding: 34px 0px;
+}
+
+button.btn.btn1 {
+    background: #3e3e3ec2;
+    color: #ffffff;
+    margin-right: 34px;
+    font-size: 18px;
+    font-weight: 400;
+    outline: none;
+}
+
+button.btn.btn2 {
+    background: #f5f4f066;
+    color: #ffffff;
+    border: 1px solid #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.ower-section,
+.price-aria,
+.food-aria {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 252, 252, 0.99)), to(rgba(255, 254, 254, 0.99))), url(../img/banner4.png);
+    background-image: linear-gradient(rgba(255, 252, 252, 0.99), rgba(255, 254, 254, 0.99)), url(../img/banner4.png);
+}
+
+.owner-title h1 {
+    font-size: 36px;
+    color: #cc9900;
+    font-weight: bold;
+}
+
+.owner-title-img,
+.food-services-img {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.owner-title p;
+.services p {
+    font-size: 18px;
+    line-height: 26px;
+    padding-left: 48px;
+}
+
+.owner-title p span {
+    margin-left: 90px;
+}
+
+.owner-img {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* services-section */
+
+.services-section {
+    background: url(../img/banner2.png)no-repeat;
+    background-size: cover;
+}
+
+.services {
+    background: linear-gradient( #00000094, #00000094, #00000094, #00000094);
+}
+
+.services h1,
+.food-services h1 {
+    padding-top: 50px;
+    font-size: 36px;
+    color: #ffffff;
+    font-family: -webkit-pictograph;
+    font-weight: 500
+}
+
+.services p,
+.food-services p {
+    padding: 10px 55px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.services-logo {
+    padding: 40px 90px 40px;
+    margin-bottom: 90px;
+}
+
+.services-logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #2b2722;
+}
+
+
+/* price-aria */
+
+.price-title {
+    margin: 0px 50px;
+}
+
+.price-title h1 {
+    color: #cc9900;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.price-title img {
+    padding: 10px 160px;
+}
+
+.price-list {
+    margin: 0px 10px;
+    border-bottom: 1px solid #cc9900;
+}
+
+.defolt-price-list {
+    border-top: 1px solid #cc9900;
+    border-bottom: 1px solid #cc9900;
+    border-right: 1px solid #cc9900;
+    border-left: 1px solid #cc9900;
+}
+
+.price-list h2,
+.price-list h3 {
+    display: flex;
+    color: #cc9900;
+    margin-bottom: 10px;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.price-descripton p {
+    padding: 10px 10px 20px;
+    font-size: 17px;
+}
+
+.last-price {
+    margin-top: -60px;
+}
+
+.Special span {
+    background: #cc9900;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 15px;
+}
+
+
+/* Guest-aria */
+
+.Guest-aria {
+    background: url(../img/banner3.png) no-repeat center;
+}
+
+.Guest-services {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.Guest-services p {
+    padding: 10px 50px;
+}
+
+.Guest-services p::before {
+    position: absolute;
+    content: "\201C";
+    font-size: 90px;
+    left: 10%;
+    top: 37%;
+    color: #777;
+}
+
+.Guest-services p span {
+    padding-top: 40px;
+    display: inline-block;
+    padding-bottom: 90px;
+}
+
+
+/* food-aria */
+
+.food-img img {
+    height: 590px;
+    margin-right: 25px;
+}
+
+.food-img:last-child {
+    margin-right: 0px;
+}
+
+.food-services h1 {
+    color: #cc9900;
+    padding-top: 0;
+    font-weight: bold;
+}
+
+.food-services p {
+    color: #000;
+}
+
+form {
+    padding: 10px 60px;
+}
+
+.form-Name {
+    display: inline-block;
+}
+
+.form-control {
+    font-size: 1rem;
+    border-color: #777;
+    height: 42px;
+}
+
+label {
+    font-size: 25px;
+    color: #cc9900;
+    font-weight: bold;
+    cursor: unset;
+}
+
+.form-control:focus {
+    border-color: #cc9900;
+    box-shadow: none;
+}
+
+.nice-select {
+    border: solid 1px #777;
+    cursor: unset;
+    font-weight: 600;
+    width: -webkit-fill-available;
+    padding: 0px 0px 0px 15px;
+}
+
+.nice-select:hover {
+    border-color: #cc9900;
+}
+
+.date,
+.form-Name {
+    width: 100%;
+    padding-right: 10px;
+}
+
+.date:last-child,
+.form-Name:last-child {
+    padding-right: 0;
+}
+
+.submit {
+    padding-top: 20px;
+}
+
+button.btn.btn3 {
+    color: #fff;
+    padding: 15px 50px;
+    box-shadow: none;
+    background: #c9a131;
+    text-transform: capitalize;
+}
+
+
+/* footer-section */
+
+.footer-section {
+    background: #000;
+}
+
+.footer-title h1 {
+    font-size: 21px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer-title p {
+    text-align: center;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.footer-icon {
+    padding-top: 20px;
+}
+
+.footer-icon a {
+    border-bottom: 0;
+}
+
+.footer-icon i {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 15px;
+    transition: .3s;
+}
+
+.footer-icon i:hover {
+    color: #007bff;
+}
+
+nav.black {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 20px;
+    width: 100%;
+    background-color: rgba(36, 32, 32, 0.63);
+    -webkit-box-shadow: 0 2px 2px rgba(162, 159, 159, 0.96);
+    box-shadow: 0 2px 2px rgba(162, 159, 159, 0.96);
+    z-index: 9999;
+}
